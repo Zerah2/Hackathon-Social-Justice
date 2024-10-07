@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Justice Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/haki yangu logo 1.png" alt="Logo">
+            </div>
+            <ul class="menu">
+                <li><a href="#">About</a>
+                    <ul class="dropdown">
+                        <li><a href="#history">History</a></li>
+                        <li><a href="#leadership">Leadership</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Issues</a>
+                    <ul class="dropdown">
+                        <li><a href="#human-rights">Human Rights</a></li>
+                        <li><a href="#free-speech">Free Speech</a></li>
+                        <li><a href="#national-security">National Security</a></li>
+                        <li><a href="#privacy-technology">Privacy & Technology</a></li>
+                        <li><a href="#voting-rights">Voting Rights</a></li>
+                        <li><a href="#disability-rights">Disability Rights</a></li>
+                        <li><a href="#women-rights">Women Rights</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Our Work</a>
+                    <ul class="dropdown">
+                        <li><a href="#court-battles">Court Battles</a></li>
+                        <li><a href="#campaigns">Campaigns & Initiatives</a></li>
+                        <li><a href="#know-your-rights">Know Your Rights</a></li>
+                    </ul>
+                </li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#take-action">Take Action</a></li>
+                <li><a href="#give">Give</a>
+                    <ul class="dropdown">
+                        <li><a href="#donate">Donate</a></li>
+                        <li><a href="#give-monthly">Give Monthly</a></li>
+                        <li><a href="#membership">Become a Member</a></li>
+                        <li><a href="#renew-membership">Renew Membership</a></li>
+                        <li><a href="#more-ways-to-give">More Ways to Give</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Trigger button to open popup -->
+<button id="open-popup">Donate</button>
+
+<!-- Popup Modal -->
+<div id="donatePopup" class="popup">
+    <div class="popup-content">
+        <span class="close-popup">&times;</span>
+        <h2>Donate</h2>
+
+        <!-- Popup Form -->
+        <form>
+            <label for="donation-type">Select donation type:</label>
+            <div>
+                <input type="radio" id="one-time" name="donation-type" value="One-time">
+                <label for="one-time">One-time</label>
+
+                <input type="radio" id="monthly" name="donation-type" value="Monthly">
+                <label for="monthly">Monthly</label>
+
+                <!-- Span message for monthly donation -->
+                <span id="monthlyMessage" style="display:none;">A monthly gift helps us respond to urgent threats and plan ahead.</span>
+            </div>
+
+            <label>Select or enter an amount to give:</label>
+            <div>
+                <input type="radio" id="amount10" name="amount" value="10">
+                <label for="amount10">$10</label>
+
+                <input type="radio" id="amount25" name="amount" value="25">
+                <label for="amount25">$25</label>
+
+                <input type="radio" id="amount50" name="amount" value="50">
+                <label for="amount50">$50</label>
+
+                <input type="radio" id="other" name="amount" value="other">
+                <label for="other">Other</label>
+                <input type="number" id="otherAmount" name="otherAmount" min="1" placeholder="Enter amount" disabled>
+            </div>
+
+            <label for="email-signup">
+                <input type="checkbox" id="email-signup" name="email-signup">
+                Sign up for our emails to stay informed and take action to protect people's rights.
+            </label>
+
+            <label>Choose payment method:</label>
+            <div>
+                <input type="radio" id="paypal" name="payment" value="Paypal">
+                <label for="paypal">Paypal</label>
+
+                <input type="radio" id="credit-card" name="payment" value="Credit/Debit card">
+                <label for="credit-card">Credit/Debit card</label>
+
+                <input type="radio" id="mpesa" name="payment" value="Mpesa">
+                <label for="mpesa">Mpesa</label>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</div>
+
+    <!-- MAIN SECTION -->
+    <main>
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Social Justice for All</h1>
+                <p>Stand up for human rights and equality across the globe.</p>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+            <h2>How Others Are Using</h2>
+            <h3>Testimonials</h3>
+            <div class="testimonials-container">
+                <div class="testimonial-box">
+                    <img src="images/pexels-alteredsnaps-11816714.jpg" alt="Testimonial 1">
+                    <p><a href="#">"This app has become my go-to platform for reporting injustices and accessing legal help. Knowing that I can report missing persons and even raise funds for affected families makes me feel like I’m making a real difference. It’s a lifeline for those fighting for justice." </a></p>
+                </div>
+                <div class="testimonial-box">
+                    <img src="images/woman on phone and paper.jpg" alt="Testimonial 2">
+                    <p><a href="#">"As a lawyer, this app has transformed how I connect with those in need of legal support. From pro-bono cases to legal resources, it’s a one-stop shop for anyone committed to tackling social injustices. It’s empowering to be part of a platform that is driving meaningful change."</a></p>
+                </div>
+                <div class="testimonial-box">
+                    <img src="images/court hammer.jpg" alt="Testimonial 3">
+                    <p><a href="#">"During protests and demos, this app has been an invaluable tool for organizing fundraisers and providing support to families in need. The fact that it also offers counselling and pro-bono legal services makes it an essential resource for everyone standing up for justice."</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h4>Get in Touch</h4>
+                <p>Email: roundoclock2@gmail.com</p>
+                <p>Facebook | LinkedIn</p>
+            </div>
+            <p>&copy; 2024 Haki Yangu. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+<script defer src="script.js"></script>
+
+</html>
